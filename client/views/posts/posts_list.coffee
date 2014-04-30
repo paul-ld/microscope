@@ -1,14 +1,14 @@
 postsData = [
   {
-    title: 'Introducing Telescope'
+    title: 'Introducing Telescope from posts_list on views/posts'
     author: 'Sacha Greif'
     url: 'http://sachagreif.com/introducing-telescope/'
-  }
+  },
   {
-    title: 'Meteor'
-    author: 'Tom Coleman'
+    title: 'Meteor by Cool man'
+    author: 'Tom Cool man'
     url: 'http://meteor.com'
-  }
+  },
   {
     title: 'The Meteor Book'
     author: 'Tom Coleman'
@@ -16,4 +16,5 @@ postsData = [
   }
 ]
 Template.postsList.helpers
-  posts: postsData
+  posts: ->
+    Posts.find()
